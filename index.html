@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+   <nav>
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg></a></li>
+        <li><a href="#About">About Me</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Project">Project</a></li>
+        <li><a href="#Contact">Contact</a></li>
+    </ul>
+    <ul>
+        <li><a href="#Vidhyanand">Vidhyanand</a></li>
+        <li class="hideOnMobile"><a href="#About">About Me</a></li>
+        <li class="hideOnMobile"><a href="#Education">Education</a></li>
+        <li class="hideOnMobile"><a href="#Skills">Skills</a></li>
+        <li class="hideOnMobile"><a href="#Project">Project</a></li>
+        <li class="hideOnMobile"><a href="#Contact">Contact</a></li>
+        <li class="menubtn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg></a></li>
+    </ul>
+   </nav>
+   <section id="Vidhyanand">
+    <div class="section_text" style="margin: auto;">
+        <p class="section__text__p1"> Hello,I'm</p>
+        <h1 class="title">Vidhyanand Reddy</h1>
+        <p class="section__text__p2">FullStack Web Developer</p>
+        <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('https://drive.google.com/file/d/1aX-kDhRb8qYRh_wnR-ajy_tHSnKmzHSg/view?usp=drivesdk')">Download CV</button>
+        <button class="btn btn-color-1"
+        onclick="window.open('https://drive.google.com/file/d/1abfudymThuhG_A6auMtge10CJ0IbHmx4/view?usp=drivesdk')">Contact Info</button>
+        </div>
+        <div id="socials-container">
+            <i class="fa-brands fa-linkedin" class="icon" style="color: rgb(30, 0, 255);"></i>
+            <i class="fa-brands fa-square-github" class="icon"></i>
+            <i class="fa-brands fa-square-instagram" class="icon" style="color: rgba(244, 11, 228, 0.739);"></i>
+            <i class="fa-brands fa-square-facebook" class="icon" style="color: blue;"></i>
+        </div>
+    </div>
+    <div class="section__hero">
+        <img src="hero.jpg" alt="">
+    </div>
+    </section>
+    <!-- <section id="Vidhyanand" class="section">
+        <div class="second"><h1 class="title" style="text-align: center;">About Me</h1></div>
+        <div class="section__smile">
+            <img src="smile.jpg" alt="">
+        </div>
+    </section> -->
+    <section id="Education">
+        <h1 class="title">Education</h1>
+        <div class="timeline">
+            <div class="containe left">
+                <div class="content">
+                    <h2>2022-2026</h2>
+                    <b>PVKK Institute of Technology</b>
+                    <p><b>Branch:</b>Computer Science Engineering</p>
+                    <p><b>Percentage:</b>--</p>
+                    <p>Anantapur</p>
+                </div>
+            </div>
+            <div class="containe rightt">
+                <div class="content">
+                    <h2>2020-2022</h2>
+                    <b>LRG Naidu Junior collage</b>
+                    <p><b>Group:</b>MPC</p>
+                    <p><b>Percentage:</b>80%</p>
+                    <p>Hindupur</p>
+                </div>
+            </div>
+            <div class="containe left">
+                <div class="content">
+                    <h2>2008-2020</h2>
+                    <b>Deepthi[E/M] High School</b>
+                    <p><b>Percentage:</b>80%</p>
+                    <p>Hindupur</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Skills">
+        <h1 class="title">Skills</h1>
+        <div class="row">
+            <div class="side">
+                <div>HTML</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-5"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>90%</div>
+            </div>
+            <div class="side">
+                <div>CSS</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-4"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>80%</div>
+            </div>
+            <div class="side">
+                <div>Javascript</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-3"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>70%</div>
+            </div>
+            <div class="side">
+                <div>Java</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-2"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>50%</div>
+            </div>
+            <div class="side">
+                <div>C</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-1"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>50%</div>
+            </div>
+        </div>
+    </section>
+   <script src="script.js"></script>
+</body>
+</html>
